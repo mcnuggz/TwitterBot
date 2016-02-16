@@ -12,7 +12,7 @@ class Scanner:
 	# access_token_secret= keys['access_token_secret']
     def scanner(self):
         while True:
-            trends - api.trends_place(12589066) #WOE
+            trends = api.trends_place(12589066) #WOE
             hashtags = [x['name'] for x in trends[0]['trends'] if x['name'].startswith('#')]
             print("Searching...")
             trend_hashes = hashtags[0]
